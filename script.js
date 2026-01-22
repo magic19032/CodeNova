@@ -2,6 +2,7 @@ const ProjetBasculement = document.querySelector('.ProjetBasculement');
 const Recto = document.querySelector('.ProjetRecto');
 const Verso = document.querySelector('.ProjetVerso');
 
+alert("Attention être sur pc")
 ProjetBasculement.onclick = function() {
     if (ProjetBasculement.textContent === '>') {
         ProjetBasculement.textContent = '<';
@@ -17,4 +18,5 @@ ProjetBasculement.onclick = function() {
 const Logo = document.querySelector('.Logo');
 Logo.onclick = function() {
     window.location.href = 'index.html';
+
 }
