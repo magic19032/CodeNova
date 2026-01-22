@@ -1,3 +1,4 @@
+/*
 body {
   margin: 5px 0 0 0;
   height: 5px;
@@ -71,4 +72,151 @@ nav {
 .Projet:hover, .Accueil:hover, .ProjetRecto:hover, .ProjetVerso:hover {
     color: #00ffff;
     text-shadow: #00ffff 0 0 18px;
+
+}
+*/
+body {
+  margin: 5px 0 0 0;
+  height: 5px;
+  background: linear-gradient(to bottom, #00ffff, #0a0a0a);
+  background-repeat: no-repeat;
+}
+
+.background {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  background-color: #0a0a0a;
+  color: rgba(0, 255, 255, 0.9);
+  box-shadow: inset 0 0 10px #00ffff;
+  padding-top: 12px;
+}
+
+h1, .h1 {
+  margin: 0 10px 5px 10px;
+  text-align: center;
+  font-size: 50px;
+  padding: 0;
+  text-shadow: #00ffff 0 0 4px;
+  transition: all 0.4s ease;
+}
+
+.h1:hover {
+  text-shadow: #00ffff 0 0 15px;
+  color: #00ffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Accueil {
+  padding-left: 20px;
+}
+
+.Accueil, .Projet {
+  color: #00ffff;
+  text-decoration: none;
+  text-shadow: #00ffff 0 0 3px;
+  margin: 0 20px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.ProjetBasculement {
+  padding: 2px;
+  text-shadow: #00ffff 0 0 5px;
+}
+
+.ProjetBasculement:hover {
+  text-shadow: #00ffff 0 0 15px;
+}
+
+.Logo:hover {
+  filter: grayscale(44%);
+}
+
+.Logo, .ProjetBasculement:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ProjetRecto, .ProjetVerso {
+  display: none;
+  color: #00ffff;
+  text-decoration: none;
+  text-shadow: #00ffff 0 0 3px;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.Projet, .Accueil {
+  transition: all 0.4s ease;
+}
+
+.Projet:hover, .Accueil:hover, .ProjetRecto:hover, .ProjetVerso:hover {
+  color: #00ffff;
+  text-shadow: #00ffff 0 0 18px;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+/* 📱 MOBILE (≤ 600px) */
+@media (max-width: 600px) {
+
+  h1, .h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .Accueil, .Projet {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+
+  .Logo {
+    width: 80px;
+  }
+}
+
+/* 📱➡️💻 TABLETTE (601px → 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  h1, .h1 {
+    font-size: 40px;
+  }
+
+  .Accueil, .Projet {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .Logo {
+    width: 120px;
+  }
+}
+
+/* 🖥️ PC (≥ 1025px) */
+@media (min-width: 1025px) {
+
+  h1, .h1 {
+    font-size: 50px;
+  }
+
+  .Accueil, .Projet {
+    font-size: 20px;
+  }
+
+  .Logo {
+    width: 150px;
+  }
 }
